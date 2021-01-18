@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "834146918229",
+    "project_id": "flash-login",
+    "storage_bucket": "flash-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834146918229:android:08d3872961313c7eb459dc",
+        "android_client_info": {
+          "package_name": "com.example.flashcards_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834146918229-pb52i1benrastl0m3n4rqo9stqgrq6g4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flashcards_login",
+            "certificate_hash": "b8a50f62384b604bda7ca3fdc4326e943e385642"
+          }
+        },
+        {
+          "client_id": "834146918229-n9veru5mbaqkbujt51aflsp4m57lo1cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9-mHYNPSLhaLUTAeCnNQ4-RzAZ-BTsX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834146918229-n9veru5mbaqkbujt51aflsp4m57lo1cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
