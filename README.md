@@ -2,13 +2,20 @@
 
 ## Todos
 
-[✓] Google Sign-In with Firebase Authentication 
+[✓] Google Sign-In with Firebase Authentication
+
 [] Cloud Firestore
+
 [] Tests to verify firestore implementation
+
 [] Create Deck
+
 [] List Decks
+
 [] Create Cards
+
 [] Display cards
+
 [] Drawer menu
 
 ## resources:
