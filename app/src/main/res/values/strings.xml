@@ -7,4 +7,7 @@
     <string name="btn_signout">Sign Out</string>
     <string name="txt_login">Login</string>
     <string name="btn_login">Login</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="btn_uploadData">Create Data</string>
+
 </resources>

@@ -14,35 +14,34 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+  private lateinit var auth: FirebaseAuth
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
 
-        auth = Firebase.auth
-    }
+    auth = Firebase.auth
+  }
 
-    override fun onStart() {
-        super.onStart()
-        Handler(Looper.getMainLooper()).postDelayed({
-            if (auth.getCurrentUser() == null) {
-                Log.d("Debug", "User not logged in")
-                Intent(this, LoginActivity::class.java).also {
-                    startActivity(it)
-                    finish()
-                }
-            } else {
-                Intent(this, AppActivity::class.java).also {
-                    startActivity(it)
-                    finish()
-                }
-            }
-        }, 2000)
+  override fun onStart() {
+    super.onStart()
+    Handler(Looper.getMainLooper()).postDelayed({
+      if (auth.getCurrentUser() == null) {
+        Log.d("Debug", "User not logged in")
+        Intent(this, LoginActivity::class.java).also {
+          startActivity(it)
+          finish()
+        }
+      } else {
+        Intent(this, AppActivity::class.java).also {
+          startActivity(it)
+          finish()
+        }
+      }
+    }, 2000)
 
 
-
-    }
+  }
 }
 
 
