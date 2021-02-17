@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deckInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    tools:context=".DeckInfo">
+
+    <TextView
+        android:id="@+id/tvDeckName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/textBackground"
+        android:hint="Name"
+        android:textColor="@android:color/darker_gray"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDeckDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/textBackground"
+        android:hint="Description"
+        android:textColor="@android:color/darker_gray"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvDeckName"
+        app:layout_constraintStart_toStartOf="@+id/tvDeckName"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeckName" />
+
+    <TextView
+        android:id="@+id/tvCreated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/textBackground"
+        android:hint="Created"
+        android:textColor="@android:color/darker_gray"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvDeckDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvDeckDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeckDescription" />
+
+    <EditText
+        android:id="@+id/etFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@color/textBackground"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Front"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/darker_gray"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreated"
+        app:layout_constraintStart_toStartOf="@+id/tvCreated"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreated" />
+
+    <EditText
+        android:id="@+id/etBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/textBackground"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Back"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etFront"
+        app:layout_constraintTop_toBottomOf="@+id/etFront" />
+
+    <Button
+        android:id="@+id/btnCreateCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Create Card"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLearn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnExcludeCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Exclude Cards"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLearn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:text="Learn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnExcludeCards"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCreateCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,13 @@
 package com.example.flashcards_login
 
-import java.util.Calendar
+import java.util.*
 
 class Card(
-  val front: String,
-  val back: String,
-  val created: Calendar,
-  val timeStart: Calendar,
-  val timeEnd: Calendar,
+  val front: String = "",
+  val back: String = "",
+  val created: String = Calendar.getInstance().toString(),
+  val timeStart: String = Calendar.getInstance().toString(),
+  val timeEnd: String = Calendar.getInstance().toString()
 ) {
 
   fun updateTime(inc: Int, op: String) {
@@ -22,7 +22,6 @@ class Card(
   }
 
 }
-
 
 /*
 /**
@@ -69,9 +68,5 @@ fun main(args: Array<String>) {
     end.add(Calendar.MINUTE, 2)
 
     println("Start time: ${start.time} \nEnd Time: ${end.time}")
-
-
-
 }
-
  */

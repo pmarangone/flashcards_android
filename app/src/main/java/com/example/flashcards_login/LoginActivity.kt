@@ -1,10 +1,10 @@
 package com.example.flashcards_login
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
 
   private lateinit var auth: FirebaseAuth
   private lateinit var googleSignInClient: GoogleSignInClient
-  private val RC_SIGN_IN = 1;
+  private val RC_SIGN_IN = 1
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -29,11 +29,11 @@ class LoginActivity : AppCompatActivity() {
       .requestIdToken(getString(R.string.default_web_client_id))
       .requestEmail()
       .build()
-    googleSignInClient = GoogleSignIn.getClient(this, gso);
+    googleSignInClient = GoogleSignIn.getClient(this, gso)
 
     val myButton: Button = findViewById(R.id.btn_second)
     myButton.setOnClickListener {
-      signIn();
+      signIn()
     }
   }
 
@@ -71,7 +71,7 @@ class LoginActivity : AppCompatActivity() {
           Intent(this, AppActivity::class.java).also {
             Thread.sleep(500L)
             startActivity(it)
-            finish();
+            finish()
           }
 
         } else {

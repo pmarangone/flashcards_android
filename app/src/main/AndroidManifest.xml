@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Flashcards_login">
+        <activity android:name=".DisplayCards"></activity>
+        <activity android:name=".DeckInfo" />
         <activity android:name=".AppActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
