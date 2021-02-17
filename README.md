@@ -8,13 +8,13 @@
 
 [✓] Tests to verify firestore implementation
 
-[] Create Deck
+[✓] Create Deck
 
-[] List Decks
+[✓] List Decks
 
-[] Create Cards
+[✓] Create Cards
 
-[] Display cards
+[✓] Display cards
 
 [] Drawer menu
 
